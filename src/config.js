@@ -1,38 +1,30 @@
 module.exports = {
-  siteTitle: 'Brittany Chiang | Software Engineer',
+  siteTitle: 'Abhishek Tyagi | Hardware Engineer',
   siteDescription:
     'Brittany Chiang is a software engineer based in Boston, MA who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
   siteKeywords:
     'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
   siteUrl: 'https://brittanychiang.com',
   siteLanguage: 'en_US',
-  googleAnalyticsID: 'UA-45666519-2',
+  googleAnalyticsID: 'UA-148137921-1',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Brittany Chiang',
-  location: 'Boston, MA',
-  email: 'brittany.chiang@gmail.com',
-  github: 'https://github.com/bchiang7',
-  twitterHandle: '@bchiang7',
+  name: 'Abhishek Tyagi',
+  location: 'Bengaluru, KA',
+  email: 'abhishekdtu6@gmail.com',
+  github: 'https://github.com/abhishek-t-naive',
+  twitterHandle: '@_abhishek42',
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/abhishek-t-naive',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.linkedin.com/in/abhishek-tyagi-a1873596/',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/_abhishek42',
     },
   ],
 

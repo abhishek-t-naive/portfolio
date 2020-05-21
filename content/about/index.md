@@ -2,18 +2,20 @@
 title: 'About Me'
 avatar: './me.jpg'
 skills:
-  - JavaScript (ES6+)
-  - HTML & (S)CSS
-  - React
-  - Vue
-  - Node.js
-  - WordPress
+  - C/C++
+  - Python
+  - Verilog
+  - System Verilog
+  - ML
+  - Gem5
+  - orCAD PSpice
+  - Chisel HDL
 ---
 
-Hello! I'm Brittany, a software engineer based in Boston, MA.
+Hello! I'm Abhishek, a Hardware Engineer based in Bengaluru, India.
 
-I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+I work on developing state-of-the-art low-power, highly efficient hardware of facial recognition.
 
-Shortly after graduating from [Northeastern University](https://www.ccis.northeastern.edu/), I joined the engineering team at [Upstatement](https://www.upstatement.com/) where I work on a wide variety of interesting and meaningful projects on a daily basis.
+Shortly after graduating from [Delhi Technological University](http://dtu.ac.in/), I joined the [Computer Aided Design Laboratory](http://cadl.iisc.ernet.in/cadlab/) at Indian Institute of Science and later joined the Device & Systems Team at [Samsung R&D, Bangalore](https://research.samsung.com/sri-b).
 
-Here are a few technologies I've been working with recently:
+Here are a few skills that I've aquired over the years:

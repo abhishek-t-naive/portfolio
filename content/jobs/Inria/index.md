@@ -1,10 +1,10 @@
 ---
-date: '2017-12-21'
-title: 'UI Engineer Co-op'
-company: 'Apple'
-location: 'Cupertino, CA'
-range: 'July - Dec 2017'
-url: 'https://www.apple.com/music/'
+date: '2020-04-30'
+title: 'Visiting Research Scholar'
+company: 'Inria'
+location: 'Strasbourg, Alsace'
+range: 'June 2016 - Aug 2016'
+url: 'https://team.inria.fr/camus/'
 ---
 
 - Developed and shipped highly interactive web applications for Apple Music using Ember.js
