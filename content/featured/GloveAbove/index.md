@@ -2,9 +2,8 @@
 date: '1'
 title: 'Glove Above'
 cover: './demo.png'
-github: 'https://github.com/bchiang7/halcyon-site'
+#github: 'https://github.com/bchiang7/halcyon-site'
 youtube: 'https://www.youtube.com/watch?v=pYe77UhBgKg'
-external: 'https://halcyon-theme.netlify.com/'
 tech:
   - Arduino
   - Embedded Systems
