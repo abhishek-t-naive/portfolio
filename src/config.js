@@ -26,10 +26,6 @@ module.exports = {
       name: 'Twitter',
       url: 'https://twitter.com/_abhishek42',
     },
-    {
-      name: 'Youtube',
-      url: 'https://www.youtube.com/',
-    },
   ],
 
   navLinks: [
