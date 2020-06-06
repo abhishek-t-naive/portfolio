@@ -3,6 +3,7 @@ date: '1'
 title: 'Glove Above'
 cover: './demo.png'
 #github: 'https://github.com/bchiang7/halcyon-site'
+external: 'https://2015.spaceappschallenge.org/project/glove-above/'
 youtube: 'https://www.youtube.com/watch?v=pYe77UhBgKg'
 tech:
   - Arduino
