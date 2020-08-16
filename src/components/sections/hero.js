@@ -9,7 +9,11 @@ const { colors, fontSizes, fonts, navDelay, loaderDelay } = theme;
 const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
   flex-direction: column;
+  background-color: ${colors.firstSec};
   align-items: flex-start;
+  padding-left: 150px;
+  width: 1300px;
+  padding-right: 150px;
   min-height: 100vh;
   ${media.tablet`padding-top: 150px;`};
   div {
@@ -17,7 +21,7 @@ const StyledContainer = styled(Section)`
   }
 `;
 const StyledOverline = styled.h1`
-  color: ${colors.green};
+  color: ${colors.black};
   margin: 0 0 20px 3px;
   font-size: ${fontSizes.md};
   font-family: ${fonts.SFMono};
@@ -29,6 +33,7 @@ const StyledTitle = styled.h2`
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
+  color: ${colors.black};
   ${media.desktop`font-size: 70px;`};
   ${media.tablet`font-size: 60px;`};
   ${media.phablet`font-size: 50px;`};
@@ -37,7 +42,7 @@ const StyledTitle = styled.h2`
 const StyledSubtitle = styled.h3`
   font-size: 80px;
   line-height: 1.1;
-  color: ${colors.slate};
+  color: ${colors.black};
   ${media.desktop`font-size: 70px;`};
   ${media.tablet`font-size: 60px;`};
   ${media.phablet`font-size: 50px;`};
@@ -47,12 +52,13 @@ const StyledDescription = styled.div`
   margin-top: 25px;
   width: 50%;
   max-width: 500px;
+  color: ${colors.black};
   a {
     ${mixins.inlineLink};
   }
 `;
 const StyledEmailLink = styled.a`
-  ${mixins.bigButton};
+  ${mixins.bigButtonTouch};
   margin-top: 50px;
 `;
 

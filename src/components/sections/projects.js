@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import sr from '@utils/sr';
@@ -11,25 +10,21 @@ const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
+  background-color: ${colors.projects};
+  width: 1300px;
+  margin: 0;
+  padding-left: 150px;
+  padding-right: 150px;
   flex-direction: column;
   align-items: flex-start;
 `;
 const StyledTitle = styled.h4`
   margin: 0 auto;
   font-size: ${fontSizes.h3};
+  color: ${colors.black};
   ${media.tablet`font-size: 24px;`};
   a {
     display: block;
-  }
-`;
-const StyledArchiveLink = styled(Link)`
-  ${mixins.inlineLink};
-  text-align: center;
-  margin: 0 auto;
-  font-family: ${fonts.SFMono};
-  font-size: ${fontSizes.sm};
-  &:after {
-    bottom: 0.1em;
   }
 `;
 const StyledGrid = styled.div`
@@ -53,7 +48,7 @@ const StyledProjectInner = styled.div`
   height: 100%;
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
-  background-color: ${colors.lightNavy};
+  background-color: ${colors.projects_tile};
 `;
 const StyledProject = styled.div`
   transition: ${theme.transition};
@@ -79,7 +74,7 @@ const StyledFolder = styled.div`
 `;
 const StyledProjectLinks = styled.div`
   margin-right: -10px;
-  color: ${colors.lightSlate};
+  color: ${colors.black};
 `;
 const StyledIconLink = styled.a`
   position: relative;
@@ -138,17 +133,14 @@ const Projects = ({ data }) => {
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
-  const GRID_LIMIT = 6;
+  const GRID_LIMIT = 3;
   const projects = data.filter(({ node }) => node);
   const firstSix = projects.slice(0, GRID_LIMIT);
   const projectsToShow = showMore ? projects : firstSix;
 
   return (
     <StyledContainer>
-      <StyledTitle ref={revealTitle}>Other Noteworthy Projects</StyledTitle>
-      <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </StyledArchiveLink>
+      <StyledTitle ref={revealTitle}>Publications & Articles</StyledTitle>
 
       <StyledGrid>
         <TransitionGroup className="projects">
@@ -173,7 +165,7 @@ const Projects = ({ data }) => {
                       <header>
                         <StyledProjectHeader>
                           <StyledFolder>
-                            <FormattedIcon name="Folder" />
+                            <FormattedIcon name="Article" />
                           </StyledFolder>
                           <StyledProjectLinks>
                             {github && (

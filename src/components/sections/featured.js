@@ -10,6 +10,11 @@ const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
+  background-color: ${colors.featured};
+  width: 1300px;
+  margin: 0;
+  padding-left: 150px;
+  padding-right: 150px;
   flex-direction: column;
   align-items: flex-start;
 `;
@@ -27,7 +32,7 @@ const StyledContent = styled.div`
 const StyledLabel = styled.h4`
   font-size: ${fontSizes.smish};
   font-weight: normal;
-  color: ${colors.green};
+  color: ${colors.black};
   font-family: ${fonts.SFMono};
   margin-top: 10px;
   padding-top: 0;
@@ -47,8 +52,8 @@ const StyledDescription = styled.div`
   position: relative;
   z-index: 2;
   padding: 25px;
-  background-color: ${colors.lightNavy};
-  color: ${colors.lightSlate};
+  background-color: ${colors.transparent};
+  color: ${colors.black};
   font-size: ${fontSizes.lg};
   border-radius: ${theme.borderRadius};
   ${media.thone`
@@ -78,12 +83,12 @@ const StyledTechList = styled.ul`
   li {
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.smish};
-    color: ${colors.slate};
+    color: ${colors.black};
     margin-right: ${theme.margin};
     margin-bottom: 7px;
     white-space: nowrap;
     &:last-of-type {
-      margin-right: 0;
+      margin-right: 20;
     }
     ${media.thone`
       color: ${colors.lightestSlate};

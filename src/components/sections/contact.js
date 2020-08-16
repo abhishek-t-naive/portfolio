@@ -8,15 +8,19 @@ const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto 100px;
+  background-color: ${colors.lastSec};
+  color: ${colors.black};
+  width: 1300px;
+  margin: 0 auto 0px;
+  padding-left: 150px;
+  padding-right: 150px;
   a {
-    ${mixins.inlineLink};
+    ${mixins.inlineLinkLastSec};
   }
 `;
 const StyledHeading = styled(Heading)`
   display: block;
-  color: ${colors.green};
+  color: ${colors.black};
   font-size: ${fontSizes.md};
   font-family: ${fonts.SFMono};
   font-weight: normal;
@@ -34,13 +38,15 @@ const StyledHeading = styled(Heading)`
 `;
 const StyledTitle = styled.h4`
   margin: 0 0 20px;
+  color: ${colors.black};
   font-size: 60px;
   ${media.desktop`font-size: 50px;`};
   ${media.tablet`font-size: 40px;`};
 `;
 const StyledEmailLink = styled.a`
-  ${mixins.bigButton};
+  ${mixins.bigButtonLastSec};
   margin-top: 50px;
+  color: ${colors.black};
 `;
 
 const Contact = ({ data }) => {

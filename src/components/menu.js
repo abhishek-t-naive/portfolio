@@ -18,13 +18,13 @@ const StyledContainer = styled.div`
   transition: ${theme.transition};
   transform: translateX(${props => (props.menuOpen ? 0 : 100)}vw);
   visibility: ${props => (props.menuOpen ? 'visible' : 'hidden')};
+  background-color: ${colors.transparent};
   display: none;
   ${media.tablet`display: block;`};
 `;
 const Sidebar = styled.aside`
   ${mixins.flexCenter};
   flex-direction: column;
-  background-color: ${colors.lightNavy};
   padding: 50px;
   width: 50vw;
   height: 100%;
@@ -42,9 +42,11 @@ const NavLinks = styled.nav`
   width: 100%;
   flex-direction: column;
   text-align: center;
-  color: ${colors.lightestSlate};
+  //color: ${colors.lightestSlate};
+  color: ${colors.black};
 `;
 const NavList = styled.ol`
+  background-color: ${colors.transparent};
   padding: 0;
   margin: 0;
   list-style: none;
@@ -63,7 +65,7 @@ const NavListItem = styled.li`
   &:before {
     display: block;
     content: '0' counter(item) '.';
-    color: ${colors.green};
+    color: ${colors.link};
     font-size: ${fontSizes.sm};
     margin-bottom: 5px;
   }

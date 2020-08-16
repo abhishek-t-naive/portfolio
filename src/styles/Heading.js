@@ -3,10 +3,12 @@ import theme from './theme';
 import media from './media';
 const { colors, fontSizes, fonts } = theme;
 
+//This is being used to style the numbers in front of the all section headings like '01', '02' etc
 const Heading = styled.h3`
   position: relative;
   display: flex;
   align-items: center;
+  color: ${colors.black};
   margin: 10px 0 40px;
   width: 100%;
   white-space: nowrap;
@@ -19,7 +21,8 @@ const Heading = styled.h3`
     margin-right: 10px;
     font-family: ${fonts.SFMono};
     font-weight: normal;
-    color: ${colors.green};
+    color: ${colors.black};
+    //color: ${colors.white};
     font-size: ${fontSizes.xl};
     position: relative;
     bottom: 4px;
@@ -31,7 +34,8 @@ const Heading = styled.h3`
     display: block;
     height: 1px;
     width: 300px;
-    background-color: ${colors.lightestNavy};
+    //background-color: ${colors.lightestNavy};
+    background-color: ${colors.black};
     position: relative;
     top: -5px;
     margin-left: 20px;

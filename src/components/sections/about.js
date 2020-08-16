@@ -9,10 +9,19 @@ const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
   position: relative;
+  //background-color: ${colors.white};
+  background-color: ${colors.peachorange};
+  color: ${colors.black};
+	width: 1300px;
+	padding-left: 150px;
+	padding-right: 150px;
+	margin: 0;
 `;
 const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
+  //${mixins.flexCenter};
   align-items: flex-start;
+  //align-items: center;
   ${media.tablet`display: block;`};
 `;
 const StyledContent = styled.div`
@@ -37,12 +46,12 @@ const Skill = styled.li`
   padding-left: 20px;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smish};
-  color: ${colors.slate};
+  color: ${colors.black};
   &:before {
     content: '▹';
     position: absolute;
     left: 0;
-    color: ${colors.green};
+    color: ${colors.red};
     font-size: ${fontSizes.sm};
     line-height: 12px;
   }
@@ -51,7 +60,8 @@ const StyledPic = styled.div`
   position: relative;
   width: 40%;
   max-width: 300px;
-  margin-left: 60px;
+  margin-left: 0px;
+  margin-right: 100px;
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
   a {
@@ -72,7 +82,8 @@ const StyledAvatarLink = styled.a`
   width: 100%;
   position: relative;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
+  /*IMAGE_BACKGROUND_COLOR CHANGE*/
+  background-color: ${colors.transparent};
   margin-left: -20px;
   &:hover,
   &:focus {
@@ -101,11 +112,12 @@ const StyledAvatarLink = styled.a`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${colors.navy};
+    background-color: ${colors.transparent};
     mix-blend-mode: screen;
   }
   &:after {
-    border: 2px solid ${colors.green};
+    /*BORDER_BOX_COLOR CHANGE*/
+    border: 2px solid ${colors.black};
     top: 20px;
     left: 20px;
     z-index: -1;

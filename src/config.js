@@ -1,9 +1,9 @@
 module.exports = {
   siteTitle: 'Abhishek Tyagi | Hardware Engineer',
   siteDescription:
-    'Brittany Chiang is a software engineer based in Boston, MA who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
+    'Abhishek Tyagi is a hardware engineer based in Bengaluru, KA specializing in building architectures for processing upcoming applications like ML, AR, VR etc.',
   siteKeywords:
-    'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
+    'Abhishek Tyagi, Abhishek, Tyagi, abhishek-t-naive, _abhishek42, Hardware Engineer, DTU',
   siteUrl: 'https://brittanychiang.com',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-148137921-1',

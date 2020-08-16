@@ -10,6 +10,7 @@ const Main = styled.main`
   min-height: 100vh;
   padding-top: 200px;
   padding-bottom: 200px;
+  padding-left: 0px;
   ${media.desktop`
     padding-top: 200px;
     padding-bottom: 200px;

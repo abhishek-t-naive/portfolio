@@ -8,11 +8,16 @@ const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
   position: relative;
-  max-width: 700px;
+  width: 1300px;
+  //max-width: 1120px;
+  background-color: ${colors.jobs};
+  color: ${colors.black};
+  margin: 0;
+  padding-left: 150px;
 `;
 const StyledTabs = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start
   position: relative;
   ${media.thone`
     display: block;
@@ -67,12 +72,12 @@ const StyledTabButton = styled.button`
   height: ${theme.tabHeight}px;
   padding: 0 20px 2px;
   transition: ${theme.transition};
-  border-left: 2px solid ${colors.lightestNavy};
+  border-left: 2px solid ${colors.black};
   text-align: left;
   white-space: nowrap;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smish};
-  color: ${props => (props.isActive ? colors.green : colors.slate)};
+  color: ${props => (props.isActive ? colors.black : colors.black)};
   ${media.tablet`padding: 0 15px 2px;`};
   ${media.thone`
     ${mixins.flexCenter};
@@ -89,7 +94,7 @@ const StyledTabButton = styled.button`
 `;
 const StyledHighlight = styled.span`
   display: block;
-  background: ${colors.green};
+  background: ${colors.jobhigh};
   width: 2px;
   height: ${theme.tabHeight}px;
   border-radius: ${theme.borderRadius};
@@ -119,7 +124,7 @@ const StyledHighlight = styled.span`
 `;
 const StyledTabContent = styled.div`
   position: relative;
-  width: 100%;
+  width: 50%;
   height: auto;
   padding-top: 12px;
   padding-left: 30px;
@@ -134,20 +139,23 @@ const StyledTabContent = styled.div`
   }
 `;
 const StyledJobTitle = styled.h4`
-  color: ${colors.lightestSlate};
+  //color: ${colors.lightestSlate};
+  color: ${colors.black};
   font-size: ${fontSizes.xxl};
   font-weight: 500;
   margin-bottom: 5px;
 `;
 const StyledCompany = styled.span`
-  color: ${colors.green};
+  //color: ${colors.green};
+  color: ${colors.black};
 `;
 const StyledJobDetails = styled.h5`
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smish};
   font-weight: normal;
   letter-spacing: 0.05em;
-  color: ${colors.lightSlate};
+  //color: ${colors.lightSlate};
+  color: ${colors.black};
   margin-bottom: 30px;
   svg {
     width: 15px;
@@ -195,7 +203,7 @@ const Jobs = ({ data }) => {
 
   return (
     <StyledContainer id="jobs" ref={revealContainer}>
-      <Heading>Where I&apos;ve Worked</Heading>
+      <Heading>Professional Experience</Heading>
       <StyledTabs>
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyPressed(e)}>
           {data &&

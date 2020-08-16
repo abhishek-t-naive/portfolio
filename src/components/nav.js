@@ -16,7 +16,7 @@ const StyledContainer = styled.header`
   position: fixed;
   top: 0;
   padding: 0px 50px;
-  background-color: ${colors.navy};
+  background-color: ${colors.firstSec};
   transition: ${theme.transition};
   z-index: 11;
   filter: none !important;
@@ -146,7 +146,7 @@ const StyledListItem = styled.li`
   &:before {
     content: '0' counter(item) '.';
     text-align: right;
-    color: ${colors.green};
+    color: ${colors.black};
     font-size: ${fontSizes.xs};
   }
 `;
@@ -154,7 +154,7 @@ const StyledListLink = styled(Link)`
   padding: 12px 10px;
 `;
 const StyledResumeButton = styled.a`
-  ${mixins.smallButton};
+  ${mixins.smallButtonResume};
   margin-left: 10px;
   font-size: ${fontSizes.smish};
 `;

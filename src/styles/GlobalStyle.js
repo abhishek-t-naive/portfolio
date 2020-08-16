@@ -28,7 +28,8 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.navy};
+    //background-color: ${colors.navy};
+    background-color: ${colors.transparent};
     color: ${colors.slate};
     line-height: 1.3;
     font-family: ${fonts.Calibre};
@@ -114,14 +115,16 @@ const GlobalStyle = createGlobalStyle`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
-    color: inherit;
+    //color: inherit;
+    color: ${colors.black};
     position: relative;
     transition: ${theme.transition};
     cursor: pointer;
 
     &:hover,
     &:focus {
-      color: ${colors.green};
+      //color: ${colors.green};
+      color: ${colors.black};
     }
   }
 
